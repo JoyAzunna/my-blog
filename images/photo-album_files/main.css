@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    border-bottom: 20px solid rgba(177, 81, 13, 0.758);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background:url(./images/coffee\ 1.jpg);
+ background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 20px;
+    color: rgb(160, 69, 4);
+
+}
+h1 span{
+color: rgba(72, 3, 3, 0.922);
+font-size: 2em;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input{
+    width: 30%;
+    height: 50px;
+    margin-top: 2px ;
+    border-radius: 10px;
+    border: 1px solid rgb(52, 39, 41);
+    padding: 10px;
+}
+input:hover{
+    cursor: pointer;
+}
+
+main{
+ /* border: 2px solid rgb(189, 57, 79);  */
+ margin-top: 2px;  
+}
+.sect{
+    /* border: 2px solid purple; */
+    margin: 10px;
+    padding: 30px;
+}
+.sect>h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(72, 3, 3, 0.922);
+    font-size: 2em;
+}
+.Random{
+    /* border: 2px solid plum; */
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    padding: 30px;
+    gap: 20px;
+}
+.parent{
+    perspective: 1000px;
+    background-color: transparent;
+    width: 270px;
+    height: 275px;
+}
+.child{
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+}
+.parent:hover .child{
+    transform:rotateY(180deg);
+}
+.inner_pic, .back_pic, .inner, .inn{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+.back_pic{
+    background-color: rgb(47, 10, 10);
+    transform: rotateY(180deg);
+    border: 2px solid indianred;
+}
+.skyscrapper_back_pic{
+    background-color:chocolate
+}
+.skyscrapper_back_pic>h1{
+    color: rgb(47, 10, 10);
+}
+.lifestyle_back_pic{
+    background-color:rgb(109, 35, 35)
+}
+.lifestyle_back_pic>h1{
+    color: coral;
+}
+.back_pic>h1{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+.inner_pic{
+     border: 2px solid indianred;
+    border-radius: 20px;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+    box-shadow: 4px 10px rgb(147, 71, 71);
+    border-bottom-left-radius: 50px;
+    
+}
+.inner_pic>img{
+    height: 15rem;
+    width: 100%;
+    border-radius: 20px;
+}
+.inner_pic>h1{
+    color: rgba(72, 3, 3, 0.922);
+    text-align: center;
+    margin-top: 10px;
+}
+.inner{
+    border: 2px solid aquamarine;
+    border-radius: 20px;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+    box-shadow: 4px 10px rgba(70, 39, 39, 0.829);
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.inner>img{
+    height: 15rem;
+    width: 100%;
+    border-radius: 20px; 
+    border-top-right-radius: 50px;
+}
+.inner>h1{
+    color: rgba(72, 3, 3, 0.922);
+    text-align: center;
+    margin-top: 10px;
+}
+.inn{
+    border: 2px solid coral;
+    border-radius: 20px;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+    box-shadow: 4px 10px rgba(127, 25, 25, 0.71);
+    border-bottom-left-radius: 50px;
+}
+.inn>img{
+    height: 15rem;
+    width: 100%;
+    border-radius: 20px; 
+}
+.inn>h1{
+    color: rgba(72, 3, 3, 0.922);
+    text-align: center;
+    margin-top: 10px;
+}
+.footer{
+    border: 2px solid rgb(77, 35, 5);
+    /* display: flex;
+    justify-content:space-between; */
+    padding: 7px;
+    background:url(./images/coffee\ 2.jpg);
+    background-repeat: no-repeat;
+background-size: cover;
+}
+.footer:hover{
+    cursor: pointer;
+}
+.ft_input{
+    /* border: 2px solid brown; */
+    display: flex;
+    justify-content: center;
+}
+.ft_input>input{
+    width: 30%;
+    height: 20px;
+    border-radius: 30px;
+    padding: 5px;
+    /* display: flex;
+    justify-content: right; */
+    border: 1px solid white;
+}
+.ft_input>button{
+    width: 20%;
+    height: 35px;
+    border-radius: 30px;
+    /* padding: 15px; */
+    background-color: coral;
+    margin-left: -90px;
+    /* border: none; */
+    /* border:2px solid white; */
+    margin-top: 1px;
+    border-color: white;
+}
+#mine{
+    border-bottom: 2px solid brown;
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+    
+}
+.left_footer, .right_footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: firebrick; */
+ }
+ .left_footer>a{
+     color: firebrick;
+     text-decoration: none;
+ }
+ .right_footer>a{
+    color: firebrick;
+    text-decoration: none;
+ }
+ 
+ 
+
+ 
+#kab{
+    /* border: 2px solid rgb(98, 51, 17); */
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.kab>p{
+    display: flex;
+    margin: auto;
+}
+#kab>p>span{
+    margin-left: 10px;
+}
